@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #303030;
 }
 
 a:hover {
@@ -102,7 +103,7 @@ td {
 .top-wrapper {
   margin-top: 50px;
   height: 600px;
-  background-image: url("image/009.jpg");
+  background-image: url("image/top-img.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -129,6 +130,7 @@ td {
 #top-text p {
   margin-bottom: 5px;
   font-size: 25px;
+  color: #fff;
 }
 
 #top-text h3 {
@@ -141,9 +143,25 @@ td {
 }
 
 .box-last {
-  padding-bottom: 50px;
+  height: 300px;
+  padding: 0;
+  background-image: url("image/sub-img.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 50px 0 0;
 }
-.contents-title h4 {
+
+.box-last h4, .box-last p {
+  color: #fff;
+}
+
+
+
+.bg-2 {
+  background: rgba(11, 33, 79, 0.7);
+  height: 100%;
+  padding: 40px 0;
 }
 
 .contents-text {
@@ -184,6 +202,52 @@ td {
 }
 
 
+
+
+/* contact */
+
+#contact {
+  padding: 50px 0;
+}
+.form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form p {
+  text-align: left;
+  padding: 15px 0 5px;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 2px;
+  color: #303030;
+  border: 1px solid #303030;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 60px;
+}
+
+.submit {
+  color: #303030;
+  margin-top: 30px;
+  background: #fff;
+}
+
+.submit:hover {
+  color: #fff;
+  background: #303030;
+  border-color: #303030;
+  transition: .3s;
+}
+
+
 /* footer */
 footer {
   height: 130px;
@@ -193,6 +257,10 @@ footer {
   font-size: 15px;
   line-height: 130px;
   background: #30306d;
+}
+
+.fa-copyright, footer span {
+  color: #fff;
 }
 
 
