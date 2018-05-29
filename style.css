@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #30306d;
+}
+
+.container {
+  max-width: 1100px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.contents-title {
+  padding: 30px 0;
+}
+
+
+/* header */
+#logo {
+  width: 80px;
+}
+
+.navbar {
+  background: #fff;
+  margin: 0;
+}
+.navbar-header a {
+  line-height: 50px;
+  padding: 20px;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+
+
+/* about */
+.wrapper {
+  margin: 100px 0;
+}
+
+table {
+  width: 90%;
+  margin: 30px auto;
+}
+
+tr {
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  padding: 30px 0;
+  width: 40%;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+
+td {
+  text-align: left;
+  padding: 30px 0 30px 30px;
+}
+
+.wrapper p {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* main */
+.top-wrapper {
+  margin-top: 50px;
+  height: 600px;
+  background-image: url("image/009.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg {
+  background: rgba(0,0,0,0.7);
+  height: 100%;
+}
+
+#top-text {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
+
+#top-text p {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+#top-text h3 {
+  padding-top: 40px;
+}
+
+/* vision */
+.box {
+  padding: 70px 0 0;
+}
+
+.box-last {
+  padding-bottom: 50px;
+}
+.contents-title h4 {
+}
+
+.contents-text {
+  text-align: center;
+}
+
+.contents-text li{
+  display: inline-block;
+  width: 20%;
+}
+
+.contents-text ul {
+  margin: 0 auto;
+}
+
+.contents-text p {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+
+#bitcard-img{
+  width: 70%;
+  margin-top: 30px;
+  transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+}
+
+#bitcard {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26px;
+}
+
+
+/* footer */
+footer {
+  height: 130px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 130px;
+  background: #30306d;
+}
+
+
+@media screen and (max-width: 640px) {
+
+  .navbar-header a{
+    float: left;
+    padding: 0 0 0 15px;
+  }
+
+  .navbar-nav {
+    float: none;
+    text-align: center;
+  }
+
+  #top-text p{
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .contents-text p {
+    font-size: 13px;
+  }
+
+  .contents-text li{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contents-text ul {
+    margin: 0 auto;
+  }
+
+
+  th {
+    width: 30%;
+  }
+
+  th, td {
+    font-size: 10px;
+  }
+
+}

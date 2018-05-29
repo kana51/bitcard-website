@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bitcard</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- container -->
+    <div class="container">
+    <!-- nav-header -->
+      <div class="navbar-header">
+          <!-- logo -->
+        <a href="#"><img src="image/logo.png" id="logo"></a>
+          <!-- toggle -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div><!-- end nav-header -->
+      <!-- top menu -->
+      <div class="collapse navbar-collapse" id="top-nav">
+          <!-- left -->
+          <ul class="nav navbar-nav">
+            <li><a href="about.html" class="about">About</a></li>
+            <li><a href="#vision" class="vision">Vision</a></li>
+          </ul>
+      </div><!-- end top menu -->
+    </div><!-- end container -->
+  </nav><!-- end nav -->
+</header>
+
+
+<!-- main -->
+<div class="top-wrapper">
+  <div class="bg">
+    <div id="top-text">
+      <p>ブロックチェーンをもっと身近に、もっと手軽に</p>
+      <h1>bitcard</h1>
+      <h3>Comming soon...</h3>
+    </div>
+  </div>
+</div><!-- end top-wrapper -->
+
+<!-- vision -->
+<div id="vision">
+  <div class="box">
+    <div class="container">
+      <div class="contents-title">
+        <h2><span style="font-family: 'Josefin Sans';">bitcard</span> Vision</h2>
+      </div>
+      <div class="contents-text">
+        <p>ICカードで仮想通貨決済が可能に。<br>
+          支払いが更にスムーズに、そして使いやすく。
+        </p>
+      </div>
+      <div class="contents-img">
+        <img src="image/bitcard-3.png" id="bitcard-img">
+      </div>
+    </div><!-- end container -->
+  </div><!-- end box -->
+
+  <div class="box box-last">
+    <div class="container">
+      <div class="contents-title">
+        <h4>ハードウォレットに求められる<br>
+        「わかりやすさ・利便性」</h4>
+      </div>
+      <div class="contents-text">
+        <p>ハードウォレットが注目される中、bitcardは既に広く普及しているICカード技術に着目し、<br>
+        ブロックチェーン技術と融合させ「誰もが手軽に・安全に」利用することができるサービスを提供します。<br>
+        </p>
+      </div>
+    </div><!-- end container -->
+  </div><!-- end box-bg -->
+</div><!-- end vision -->
+
+
+
+
+
+<!-- footer -->
+
+<footer>
+  2018<i class="far fa-copyright"></i>&nbsp;<span style="font-family: 'Josefin Sans';">bitcard</span>,&nbsp;inc.
+</footer>
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+  $(function() {
+    $('#top-text').hide().delay(200).fadeIn(3000);
+  });
+
+$(window).on('load',function(){
+
+	// fade-in
+    $(window).scroll(function (){
+        $('#bitcard-img').each(function(){
+            var POS = $(this).offset().top;  //fade-inがついている要素の位置
+            var scroll = $(window).scrollTop();  //スクロール一
+            var windowHeight = $(window).height();  //ウィンドウの高さ
+
+            if (scroll > POS - windowHeight + windowHeight/3){
+                $(this).css("opacity","1" );
+            } else {
+                $(this).css("opacity","0" );
+            }
+        });
+    });
+});
+
+</script>
+
+
+</body>
+</html>
